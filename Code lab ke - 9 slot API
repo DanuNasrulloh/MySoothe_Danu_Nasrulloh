@@ -1,0 +1,18 @@
+Code :
+fun HomeSection(
+    @StringRes title: Int,
+    modifier: Modifier = Modifier,
+    Content: @Composable () -> Unit
+) {
+    Column(modifier) {
+        Text(
+            stringResource(id = title).uppercase(),
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onBackground,
+            modifier = Modifier
+                .paddingFromBaseline(top = 40.dp, bottom = 8.dp)
+                .padding(horizontal = 16.dp)
+        )
+        Content()
+    }
+}
