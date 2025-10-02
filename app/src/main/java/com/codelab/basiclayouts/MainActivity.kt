@@ -216,21 +216,21 @@ fun HomeSection(
 // Step: Home screen - Scrolling
 @Composable
 fun HomeScreen(modifier: Modifier = Modifier) {
-//    Column(
-//
-//        modifier
-//            .verticalScroll(rememberScrollState())
-//    ){
-//        Spacer(Modifier.height(16.dp))
-//        SearchBar(Modifier.padding(horizontal = 16.dp))
-//        HomeSection(title = R.string.align_your_body) {
-//            AlignYourBodyRow()
-//        }
-//        HomeSection(title = R.string.favorite_collections) {
-//            FavoriteCollectionsGrid()
-//        }
-//        Spacer(Modifier.height(16.dp))
-//    }
+    Column(
+
+        modifier
+            .verticalScroll(rememberScrollState())
+    ){
+        Spacer(Modifier.height(16.dp))
+        SearchBar(Modifier.padding(horizontal = 16.dp))
+        HomeSection(title = R.string.align_your_body) {
+            AlignYourBodyRow()
+        }
+        HomeSection(title = R.string.favorite_collections) {
+            FavoriteCollectionsGrid()
+        }
+        Spacer(Modifier.height(16.dp))
+    }
 }
 
 // Step: Bottom navigation - Material
