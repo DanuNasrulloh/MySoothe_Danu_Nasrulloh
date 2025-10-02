@@ -1,0 +1,21 @@
+Code :
+@Composable
+fun FavoriteCollectionsGrid(
+    modifier: Modifier = Modifier
+) {
+    LazyHorizontalGrid(
+        rows = GridCells.Fixed(2),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+        modifier = modifier.height(120.dp),
+    ){
+        items(favoriteCollectionsData){ item ->
+            FavoriteCollectionCard(
+                drawable = item.drawable,
+                text = item.text,
+                modifier = Modifier.padding(8.dp)
+            )
+        }
+    }
+
+}
