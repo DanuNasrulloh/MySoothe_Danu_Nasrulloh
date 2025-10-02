@@ -1,0 +1,23 @@
+Code Lab ke 4 - basiclayouts
+TextField(
+        value = "",
+        onValueChange = {},
+        leadingIcon = {
+            Icon(Icons.Default.Search, contentDescription = null)
+        },
+        placeholder = {
+            Text(stringResource(R.string.placeholder_search))
+        },
+        colors = TextFieldDefaults.colors(
+            unfocusedContainerColor = MaterialTheme.colorScheme.surface,
+            focusedContainerColor = MaterialTheme.colorScheme.surface
+        ),
+        modifier = modifier
+            .heightIn(min = 56.dp)
+            .fillMaxWidth()
+    )
+
+Untuk yang di video
+bagian : Colors = TextFieldDefaults.textFieldColors(
+                backgroundColors = MaterialTheme.colorsScheme.surface
+          )
