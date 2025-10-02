@@ -1,0 +1,28 @@
+Code : 
+ fun AlignYourBodyElement(
+    modifier: Modifier = Modifier
+) {
+    Column(
+        horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally,
+        modifier = modifier
+    ) {
+        Image(
+            painterResource(id = R.drawable.ab1_inversions),
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            modifier = Modifier.size(88.dp)
+                .clip(CircleShape)
+        )
+        Text (
+            stringResource(id = R.string.ab1_inversions),
+            style = MaterialTheme.typography.bodyMedium,
+            modifier = Modifier
+                .paddingFromBaseline(top = 24.dp, bottom = 8.dp)
+
+        )
+    }
+}
+
+Ada perbedaan pada tutorial youtube dan code di website :
+untuk bagian 
+  painterResource(id = R.drawable.ab1_inversions) dan stringResource(id = R.string.ab1_inversions), berada di bagian fun AlignYourBodyElementPreview()
