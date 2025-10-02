@@ -1,0 +1,18 @@
+Code :
+pada bagian class MainActivity : ComponentActivity()
+Menambahkan : @OptIn(ExperimentalMaterial3WindowSizeClassApi::class) dan pada bagian setcontent : 
+val windowSizeClass = calculateWindowSizeClass(this)
+           MySootheApp(windowSizeClass)
+
+untuk code dibagian :
+@Composable
+fun MySootheApp(windowSize: WindowSizeClass) {
+   when (windowSize.widthSizeClass) {
+       WindowWidthSizeClass.Compact -> {
+           MySootheAppPortrait()
+       }
+       WindowWidthSizeClass.Expanded -> {
+           MySootheAppLandscape()
+       }
+   }
+}
