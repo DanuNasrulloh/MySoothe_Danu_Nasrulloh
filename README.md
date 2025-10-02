@@ -3,10 +3,7 @@
 
 Berikut adalah video demonstrasi proyek ini:
 
-<video width="640" height="360" controls>
-  <source src="[video.mp4](https://github.com/DanuNasrulloh/MySoothe_Danu_Nasrulloh/blob/main/video.mp4
-)" type="video/mp4">
-</video>
+[![Video Thumbnail](https://drive.google.com/file/d/1pseELq0jeQsoQmMCTg53bzhaY2PCOB02/view?usp=drive_link)](https://drive.google.com/file/d/1pseELq0jeQsoQmMCTg53bzhaY2PCOB02/view?usp=drive_link)
 
 This folder contains the source code for
 the [Basic Layouts in Compose Codelab](https://developer.android.com/codelabs/jetpack-compose-layouts)
